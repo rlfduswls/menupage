@@ -1,0 +1,187 @@
+@font-face {
+    font-family: 'SEBANG_Gothic_Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2104@1.0/SEBANG_Gothic_Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{margin:0;
+    padding:0;}
+
+body{
+    background-color: rgb(215, 208, 184);
+}
+
+#wrap{
+    background-color: white;
+    width:600px;
+    margin:0 auto;
+    display: grid;
+    grid-template-areas: 
+    "header1 header1"
+    "header2 header2"
+    "header3 header4"
+    "section section"
+    "lastfooter lastfooter"
+    ;
+    grid-template-columns: 300px 300px;
+    grid-template-rows:  100px 70px 70px 700px 70px;
+
+}
+
+#header1{
+    display: grid;
+    grid-template-areas: 
+    ". headerA headerB .";
+    grid-template-columns: 50px 250px 250px 50px;
+    grid-template-rows:  100px ;
+    place-items: center;  
+}
+#headerA{
+    grid-area: headerA;
+    border-color: #E6E6E6;
+    width: 230PX;
+    height: 70PX;
+    border-radius: 10PX;
+    font-size: larger;
+    font-family: 'SEBANG_Gothic_Bold';
+    color: #544866;
+    border: none;
+
+}
+#headerB{
+    grid-area: headerB;
+    border-color: #E6E6E6;
+    width: 230PX;
+    height: 70PX;
+    border-radius: 10PX;
+    font-size: larger;
+    font-family: 'SEBANG_Gothic_Bold';
+    color: #544866;
+    border: none;
+
+}
+
+#header2{
+    grid-area: header2;
+    text-align: center;
+   
+    
+}
+#orderstate{
+    background: #E6E6E6;
+    border-radius: 20px;
+    width: 480px;
+    height: 50px;
+    border: none;
+    font-size: 15px;
+    text-align: center;
+    font-family: 'SEBANG_Gothic_Bold';
+    color: #544866;
+}
+
+#header3{
+    grid-area: header3;
+    text-align: center;
+    width: 700px;
+   height: 70px;
+   color: #544866;
+    
+}
+
+#header4{
+    grid-area: header4;
+    text-align: center;
+    width: 400px;
+    height: 70px;
+
+    
+}
+#headerD{
+    width: 70px;
+    height: 30px;
+    font-size: small;
+    font-family: 'SEBANG_Gothic_Bold';
+    color: #544866;
+    border: none;
+    border-radius: 90PX;
+
+}
+
+#section{ 
+    grid-area:section;
+    display: grid;
+    width: 600PX;
+    height: 800pX;
+    grid-template-areas: 
+    "menu1";
+    grid-template-columns: 600px;
+    grid-template-rows: 150px ;
+    place-items: center;
+
+
+}
+#menu1{
+    grid-area: menu1;
+    background: #FFF7EA;
+    border-radius: 20px;
+    width: 450PX;
+    height: 150pX;
+}
+
+#menu1>h2,#menu1>h3{
+    color:#4F4F4F;
+    text-align: left;
+}
+#menu1>h4{
+    color:#4F4F4F;
+    text-align: right;
+    font-weight: lighter;
+    font-size: medium;
+
+}
+
+#lastfooter{
+    height: 100px;
+    grid-area: lastfooter;
+    background-color: white;
+    display: grid;
+    grid-template-areas: ". lastfooter1 lastfooter2 lastfooter3 . ";
+    grid-template-columns: 25px 180px 180px 180px 25px ;
+    grid-template-rows: 100px;
+    place-items: center;
+}
+
+#lastfooter1{
+    font-size: larger;
+    text-align: center;
+    grid-area: lastfooter1;
+    background-color:white;
+    height: 10px;
+    width: 170px;
+    border: none;
+    font-family: 'SEBANG_Gothic_Bold'
+
+
+}
+#lastfooter2{
+    font-size: larger;
+    grid-area: lastfooter2;
+    background-color:white;
+    height: 10px;
+    width: 170px;
+    border:none;
+    font-family: 'SEBANG_Gothic_Bold'
+}
+
+#lastfooter3{
+    font-size: larger;
+    grid-area: lastfooter3;
+    background-color:white;
+    height: 10px;
+    width: 170px;
+    border:none;
+    font-family: 'SEBANG_Gothic_Bold'}
+
+
+

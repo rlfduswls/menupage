@@ -12,6 +12,7 @@ headerA.addEventListener("click",(e)=>{
 
    const ggim=document.querySelector("#ggim i");
    
-   function ggimchange(){
-    ggim.setAttribute('class',"fa-thin fa-heart")}
-
+ 
+function ggim(){
+    let menu=document.querySelector
+}

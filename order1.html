@@ -12,13 +12,12 @@
             </div>
             <div id="header2">
                     <select name="order" id="orderstate">
-                        <option value="hold"> 주문상태(완료)
+                        <option value="hold">
                         <option value="complete" selected> 주문상태(대기)
                         <option value="cancel"> 주문상태(취소)
                 </select>
             </div>
-            <div id="header3">
-                <h4 id="headerC">2023.05.29~2023.06.29</h4>
+            <div id="header3"><input type="date" id="datedate" >&nbsp&nbsp<input type="date" id="datedate">
             </div>
             <div id="header4">
                 <button type="button" id="headerD">기간설정</button>
@@ -26,9 +25,16 @@
             <div id="section" style="overflow-x:hidden; height:790px; width:600px;">
                 <div id="menu1">
                     <br>
-                    <h2>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp말미숙 외 2개</h2>
+                    <h2>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp말미숙 외 2개&nbsp&nbsp&nbsp<a href="#pop_info_1" id="btn_open" >더보기</a></h2>
                     <h3>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp13,500</h3>
                     <h4 id="day">2023.06.29 17:45 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</h4>
+                    <div id="pop_info_1" class="pop_wrap" style="display:none;">
+                        <div class="pop_inner">
+                            <p class="dsc">말미숙 1개<br> 초미숙 1개<br> 살자파 1개</p>
+                            <br>
+                          <button type="button" class="btn_close">닫기</button>
+                        </div>
+                      </div>
                 </div>
             </div>
                 <div id="lastfooter">

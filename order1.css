@@ -5,6 +5,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Tenada';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2210-2@1.0/Tenada.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
 *{margin:0;
     padding:0;}
 
@@ -82,8 +89,8 @@ body{
 
 #header3{
     grid-area: header3;
-    text-align: center;
-    width: 700px;
+    text-align: right;
+    width: 300px;
    height: 70px;
    color: #544866;
     
@@ -92,7 +99,7 @@ body{
 #header4{
     grid-area: header4;
     text-align: center;
-    width: 400px;
+    width: 300px;
     height: 70px;
 
     
@@ -185,3 +192,53 @@ body{
 
 
 
+#btn_open{
+    font-size: small;
+    text-decoration: underline;
+}
+.btn_close{
+    font-size: large;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    background-color:black;
+    font-family: 'SEBANG_Gothic_Bold'
+}
+
+.pop_wrap{position:fixed; 
+    top:0; left:0; right:0; bottom:0; 
+    background:rgba(0,0,0,.5); 
+    font-size:0;
+    text-align:center;}
+.pop_wrap:after{display:inline-block; height:100%; vertical-align:middle; content:'';}
+.pop_wrap .pop_inner{display:inline-block;
+     padding:20px 30px; 
+     background:#FFF7EA;;
+     width:500px; 
+     vertical-align:middle; 
+     font-size:large;
+     border-radius: 10px; 
+}
+
+.dsc{
+    font-size: large;
+    font-family: 'SEBANG_Gothic_Bold';
+}
+
+.title{
+    font-size: larger;
+    font-family: 'SEBANG_Gothic_Bold';
+
+}
+
+
+#btn_open:visited{
+    color : black;
+  }
+/* 기간설정 */
+#datedate{
+    color: #544866;
+    border: none;
+    font-family: 'SEBANG_Gothic_Bold';
+    
+}

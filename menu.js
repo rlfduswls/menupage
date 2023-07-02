@@ -1,6 +1,11 @@
-var totalnum=0;
 
+var totalnum=0;
+function totalnums(){
+  totalnum=0;
+  document.getElementById("total").innerText=totalnum;
+}
 var count1=1;
+
 var count1A=function(){
   count1=count1-1;
   if(count1<1){count1=1}
@@ -53,7 +58,7 @@ var count3A=function(){
   totalnum=totalnum-1;
   document.getElementById("total").innerText=totalnum;
   count3=count3-1;
-  if(count3<0){count3=0}
+  if(count3<1){count3=1}
   document.getElementById("result3").innerText=count3;
 }
 
@@ -75,7 +80,7 @@ var count4A=function(){
   totalnum=totalnum-1;
   document.getElementById("total").innerText=totalnum;
   count4=count4-1;
-  if(count4<0){count4=0}
+  if(count4<1){count4=1}
   document.getElementById("result4").innerText=count4;
 }
 
@@ -97,7 +102,7 @@ var count5A=function(){
   totalnum=totalnum-1;
   document.getElementById("total").innerText=totalnum;
   count5=count5-1;
-  if(count5<0){count5=0}
+  if(count5<1){count5=1}
   document.getElementById("result5").innerText=count5;
 }
 
@@ -119,7 +124,7 @@ var count6A=function(){
   totalnum=totalnum-1;
   document.getElementById("total").innerText=totalnum;
   count6=count6-1;
-  if(count6<0){count6=0}
+  if(count6<1){count6=1}
   document.getElementById("result6").innerText=count6;
 }
 
@@ -141,7 +146,7 @@ var count7A=function(){
   totalnum=totalnum-1;
   document.getElementById("total").innerText=totalnum;
   count7=count7-1;
-  if(count7<0){count7=0}
+  if(count7<1){count7=1}
   document.getElementById("result7").innerText=count7;
 }
 
@@ -163,7 +168,7 @@ var count8A=function(){
   count8=count8-1;
   totalnum=totalnum-1;
   document.getElementById("total").innerText=totalnum;
-  if(count8<0){count8=0}
+  if(count8<1){count8=1}
   document.getElementById("result8").innerText=count8;
 }
 
@@ -185,7 +190,7 @@ var count9A=function(){
   totalnum=totalnum-1;
   document.getElementById("total").innerText=totalnum;
   count9=count9-1;
-  if(count9<0){count9=0}
+  if(count9<1){count9=1}
   document.getElementById("result9").innerText=count9;
 }
 
@@ -208,7 +213,7 @@ var count10A=function(){
   totalnum=totalnum-1;
   document.getElementById("total").innerText=totalnum;
   count10=count10-1;
-  if(count10<0){count10=0}
+  if(count10<1){count10=1}
   document.getElementById("result10").innerText=count10;
 }
 
@@ -230,7 +235,7 @@ var count11A=function(){
   totalnum=totalnum-1;
   document.getElementById("total").innerText=totalnum;
   count11=count11-1;
-  if(count11<0){count11=0}
+  if(count11<1){count11=1}
   document.getElementById("result11").innerText=count11;
 }
 
@@ -252,7 +257,7 @@ var count12A=function(){
   totalnum=totalnum-1;
   document.getElementById("total").innerText=totalnum;
   count12=count12-1;
-  if(count12<0){count12=0}
+  if(count12<1){count12=1}
   document.getElementById("result12").innerText=count12;
 }
 
@@ -441,7 +446,7 @@ function cancelbtn(){
 }
 
 function cancle(){
-  
+  totalnums();
   cancelbtn();
   resetcount1();
   resetcount2();
@@ -455,8 +460,9 @@ function cancle(){
   resetcount10();
   resetcount11();
   resetcount12();
-  totalnum=0;
-  document.getElementById("total").innerText=totalnum;q
+  
+
+  document.getElementById("total").innerText=totalnum;
 
   btnbeige1.addEventListener("click",(e)=>{
     menu1.style.backgroundColor="#FFF6EA";

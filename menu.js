@@ -7,9 +7,12 @@ function totalnums(){
 var count1=1;
 
 var count1A=function(){
-  count1=count1-1;
-  if(count1<1){count1=1}
-  totalnum=totalnum-1;
+ 
+  if(count1>1){
+    count1=count1-1;
+    totalnum=totalnum-1;
+  }
+  
   document.getElementById("total").innerText=totalnum;
   document.getElementById("result1").innerText=count1;
 
@@ -32,9 +35,10 @@ function resetcount1(){
 
 var count2=1;
 var count2A=function(){
-  count2=count2-1;
-  if(count2<1){count2=1}
-  totalnum=totalnum-1;
+  if(count2>1){
+    count2=count2-1;
+    totalnum=totalnum-1;
+  }
   document.getElementById("total").innerText=totalnum;
   document.getElementById("result2").innerText=count2;
 }
@@ -55,10 +59,12 @@ function resetcount2(){
 
 var count3=1;
 var count3A=function(){
-  totalnum=totalnum-1;
+
+  if(count3>1){
+    count3=count3-1;
+    totalnum=totalnum-1;
+  }
   document.getElementById("total").innerText=totalnum;
-  count3=count3-1;
-  if(count3<1){count3=1}
   document.getElementById("result3").innerText=count3;
 }
 
@@ -77,10 +83,11 @@ function resetcount3(){
 
 var count4=1;
 var count4A=function(){
-  totalnum=totalnum-1;
+  if(count4>1){
+    count4=count4-1;
+    totalnum=totalnum-1;
+  }
   document.getElementById("total").innerText=totalnum;
-  count4=count4-1;
-  if(count4<1){count4=1}
   document.getElementById("result4").innerText=count4;
 }
 
@@ -99,10 +106,11 @@ function resetcount4(){
 
 var count5=1;
 var count5A=function(){
-  totalnum=totalnum-1;
+  if(count5>1){
+    count5=count5-1;
+    totalnum=totalnum-1;
+  }
   document.getElementById("total").innerText=totalnum;
-  count5=count5-1;
-  if(count5<1){count5=1}
   document.getElementById("result5").innerText=count5;
 }
 
@@ -121,10 +129,11 @@ function resetcount5(){
 
 var count6=1;
 var count6A=function(){
-  totalnum=totalnum-1;
+  if(count6>1){
+    count6=count6-1;
+    totalnum=totalnum-1;
+  }
   document.getElementById("total").innerText=totalnum;
-  count6=count6-1;
-  if(count6<1){count6=1}
   document.getElementById("result6").innerText=count6;
 }
 
@@ -143,10 +152,11 @@ function resetcount6(){
 
 var count7=1;
 var count7A=function(){
-  totalnum=totalnum-1;
+  if(count7>1){
+    count7=count7-1;
+    totalnum=totalnum-1;
+  }
   document.getElementById("total").innerText=totalnum;
-  count7=count7-1;
-  if(count7<1){count7=1}
   document.getElementById("result7").innerText=count7;
 }
 
@@ -165,10 +175,11 @@ function resetcount7(){
 
 var count8=1;
 var count8A=function(){
-  count8=count8-1;
-  totalnum=totalnum-1;
+  if(count8>1){
+    count8=count8-1;
+    totalnum=totalnum-1;
+  }
   document.getElementById("total").innerText=totalnum;
-  if(count8<1){count8=1}
   document.getElementById("result8").innerText=count8;
 }
 
@@ -187,10 +198,11 @@ function resetcount8(){
 
 var count9=1;
 var count9A=function(){
-  totalnum=totalnum-1;
+  if(count9>1){
+    count9=count9-1;
+    totalnum=totalnum-1;
+  }
   document.getElementById("total").innerText=totalnum;
-  count9=count9-1;
-  if(count9<1){count9=1}
   document.getElementById("result9").innerText=count9;
 }
 
@@ -210,10 +222,11 @@ function resetcount9(){
 
 var count10=1;
 var count10A=function(){
-  totalnum=totalnum-1;
+  if(count10>1){
+    count10=count10-1;
+    totalnum=totalnum-1;
+  }
   document.getElementById("total").innerText=totalnum;
-  count10=count10-1;
-  if(count10<1){count10=1}
   document.getElementById("result10").innerText=count10;
 }
 
@@ -232,6 +245,10 @@ function resetcount10(){
 
 var count11=1;
 var count11A=function(){
+  if(count11>1){
+    count11=count11-1;
+    totalnum=totalnum-1;
+  }
   totalnum=totalnum-1;
   document.getElementById("total").innerText=totalnum;
   count11=count11-1;
@@ -254,11 +271,12 @@ function resetcount11(){
 
 var count12=1;
 var count12A=function(){
-  totalnum=totalnum-1;
+  if(count12>1){
+    count12=count12-1;
+    totalnum=totalnum-1;
+  }
   document.getElementById("total").innerText=totalnum;
-  count12=count12-1;
-  if(count12<1){count12=1}
-  document.getElementById("result12").innerText=count12;
+    document.getElementById("result12").innerText=count12;
 }
 
 var count12B=function(){

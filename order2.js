@@ -13,6 +13,4 @@ headerA.addEventListener("click",(e)=>{
    const ggim=document.querySelector("#ggim i");
    
  
-function ggim(){
-    let menu=document.querySelector
-}
+

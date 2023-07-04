@@ -37,6 +37,7 @@ body{
 }
 
 #header1{
+  
     display: grid;
     grid-template-areas: 
     ". headerA headerB .";
@@ -45,6 +46,7 @@ body{
     place-items: center;  
 }
 #headerA{
+    background-color:#FFBCBC;
     grid-area: headerA;
     border-color: #E6E6E6;
     width: 230PX;

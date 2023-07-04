@@ -48,6 +48,7 @@ body{
 
 }
 #headerB{
+    background-color:#FFBCBC;
     grid-area: headerB;
     border-color: #E6E6E6;
     width: 230PX;

@@ -30,6 +30,7 @@ function count1B(){
 function resetcount1(){
   count1=1;
   document.getElementById("result1").innerText=count1;
+  
 }
 
 
@@ -292,110 +293,196 @@ function resetcount12(){
 
 }
 
+var clicked1=false;
+var clicked2=false;
+var clicked3=false;
+var clicked4=false;
+var clicked5=false;
+var clicked6=false;
+var clicked7=false;
+var clicked8=false;
+var clicked9=false;
+var clicked10=false;
+var clicked11=false;
+var clicked12=false;
+
+function resetClicked() {
+  clicked1 = false;
+  clicked2 = false;
+  clicked3 = false;
+  clicked4 = false;
+  clicked5 = false;
+  clicked6 = false;
+  clicked7 = false;
+  clicked8 = false;
+  clicked9 = false;
+  clicked10 = false;
+  clicked11= false;
+  clicked12 = false;
+
+}
 
 // 색상 변경 및 버튼 클릭 시 보이도록  
  const numbutton=document.querySelector("#numbutton")
   const btnbeige1=document.getElementById("menu1");
   const btnbeige2=document.getElementById("menu5");
-  const btnbeige3=document.getElementById("menu9");
+  const btnbeige3=document.getElementById("menu9")
 
 
-
-  
-  btnbeige1.addEventListener("click",(e)=>{
-    menu1.style.backgroundColor="#FFF6EA";
+function handleClick1(e) {
+  if (!clicked1) {
+    menu1.style.backgroundColor = "#FFF6EA";
     btnvisible1();
     totalnum++;
-    document.getElementById("total").innerText=totalnum;
-   }, { once : true})
+    document.getElementById("total").innerText = totalnum;
+    clicked1 = true;
+  }
+}
 
-  btnbeige2.addEventListener("click",(e)=>{
-    menu5.style.backgroundColor="#FFF6EA";
+btnbeige1.addEventListener("click", handleClick1);
+  
+function handleClick2(e) {
+  if (!clicked2) {
+    menu5.style.backgroundColor = "#FFF6EA";
     btnvisible5();
     totalnum++;
-    document.getElementById("total").innerText=totalnum;
-   },{ once : true})
-   btnbeige3.addEventListener("click",(e)=>{
-    menu9.style.backgroundColor="#FFF6EA";
+    document.getElementById("total").innerText = totalnum;
+    clicked2 = true;
+  }
+}
+
+btnbeige2.addEventListener("click", handleClick2);
+
+
+function handleClick3(e) {
+  if (!clicked3) {
+    menu9.style.backgroundColor = "#FFF6EA";
     btnvisible9();
     totalnum++;
-    document.getElementById("total").innerText=totalnum;
-   },{ once : true})
+    document.getElementById("total").innerText = totalnum;
+    clicked3 = true;
+  }
+}
+
+btnbeige3.addEventListener("click", handleClick3);
+
   
  
    const btnpink1=document.getElementById("menu2");
    const btnpink2=document.getElementById("menu6");
    const btnpink3=document.getElementById("menu10");
 
-   btnpink1.addEventListener("click",(e)=>{
-    menu2.style.backgroundColor="#f8e3e3";
+
+   function handleClick4(e) {
+    if (!clicked4) {
+      menu2.style.backgroundColor="#f8e3e3";
     btnvisible2();
     totalnum++;
     document.getElementById("total").innerText=totalnum;
-   },{ once : true})
-   btnpink2.addEventListener("click",(e)=>{
-    menu6.style.backgroundColor="#f8e3e3";
-    btnvisible6();
-    totalnum++;
-    document.getElementById("total").innerText=totalnum;
-   },{ once : true})
+      clicked4 = true;
+    }
+  }
+  btnpink1.addEventListener("click", handleClick4);
 
-   btnpink3.addEventListener("click",(e)=>{
-    menu10.style.backgroundColor="#f8e3e3";
-    btnvisible10();
-    totalnum++;
-    document.getElementById("total").innerText=totalnum;
-   },{ once : true})
+
+  function handleClick5(e) {
+    if (!clicked5) {
+      menu6.style.backgroundColor="#f8e3e3";
+        btnvisible6();
+        totalnum++;
+        document.getElementById("total").innerText=totalnum;
+      clicked5 = true;
+    }
+  }
+  btnpink2.addEventListener("click", handleClick5);
+
+  function handleClick6(e) {
+    if (!clicked6) {
+      menu10.style.backgroundColor="#f8e3e3";
+        btnvisible10();
+        totalnum++;
+        document.getElementById("total").innerText=totalnum;
+      clicked6 = true;
+    }
+  }
+  btnpink3.addEventListener("click", handleClick6);
 
    const btnblue1=document.getElementById("menu3");
    const btnblue2=document.getElementById("menu7");
    const btnblue3=document.getElementById("menu11");
 
-   btnblue1.addEventListener("click",(e)=>{
-    menu3.style.backgroundColor="#E7F3FF";
-    btnvisible3();
-    totalnum++;
-    document.getElementById("total").innerText=totalnum;
+   function handleClick7(e) {
+    if (!clicked7) {
+      menu3.style.backgroundColor="#E7F3FF";
+      btnvisible3();
+      totalnum++;
+      document.getElementById("total").innerText=totalnum;
+      clicked7 = true;
+    }
+  }
+  btnblue1.addEventListener("click", handleClick7);
 
-   },{ once : true})
-   btnblue2.addEventListener("click",(e)=>{
-    menu7.style.backgroundColor="#E7F3FF";
+  function handleClick8(e) {
+    if (!clicked8) {
+      menu7.style.backgroundColor="#E7F3FF";
     btnvisible7();
     totalnum++;
     document.getElementById("total").innerText=totalnum;
-   },{ once : true})
+      clicked8 = true;
+    }
+  }
+  btnblue2.addEventListener("click", handleClick8);
 
-   btnblue3.addEventListener("click",(e)=>{
-    menu11.style.backgroundColor="#E7F3FF";
+
+  function handleClick9(e) {
+    if (!clicked9) {
+      menu11.style.backgroundColor="#E7F3FF";
     btnvisible11();
     totalnum++;
     document.getElementById("total").innerText=totalnum;
-   },{ once : true})
+      clicked9 = true;
+    }
+  }
+  btnblue3.addEventListener("click", handleClick9);
 
    const btnyellow1=document.getElementById("menu4");
    const btnyellow2=document.getElementById("menu8");
    const btnyellow3=document.getElementById("menu12");
 
-   btnyellow1.addEventListener("click",(e)=>{
-    menu4.style.backgroundColor="#f6e2d0";
+   function handleClick10(e) {
+    if (!clicked10) {
+      menu4.style.backgroundColor="#f6e2d0";
     btnvisible4();
     totalnum++;
     document.getElementById("total").innerText=totalnum;
-   },{ once : true})
+      clicked10 = true;
+    }
+  }
+  btnyellow1.addEventListener("click", handleClick10);
 
-   btnyellow2.addEventListener("click",(e)=>{
-    menu8.style.backgroundColor="#f6e2d0";
-    btnvisible8();
-    totalnum++;
-    document.getElementById("total").innerText=totalnum;
-   },{ once : true})
+  function handleClick11(e) {
+    if (!clicked11) {
+      menu8.style.backgroundColor="#f6e2d0";
+      btnvisible8();
+      totalnum++;
+      document.getElementById("total").innerText=totalnum;
+      clicked11 = true;
+    }
+  }
+  btnyellow2.addEventListener("click", handleClick11);
 
-   btnyellow3.addEventListener("click",(e)=>{
-    menu12.style.backgroundColor="#f6e2d0";
-    btnvisible12();
-    totalnum++;
-    document.getElementById("total").innerText=totalnum;
-   },{ once : true})
+
+  function handleClick12(e) {
+    if (!clicked12) {
+      menu12.style.backgroundColor="#f6e2d0";
+      btnvisible12();
+      totalnum++;
+      document.getElementById("total").innerText=totalnum;
+      clicked12 = true;
+    }
+  }
+  btnyellow3.addEventListener("click", handleClick12);
+
 
    function btnvisible1(){
     numbutton1.setAttribute('class','active')
@@ -463,7 +550,7 @@ function cancelbtn(){
  
 }
 
-function cancle(){
+function cancel(){
   totalnums();
   cancelbtn();
   resetcount1();
@@ -479,89 +566,8 @@ function cancle(){
   resetcount11();
   resetcount12();
   
-
   document.getElementById("total").innerText=totalnum;
+  resetClicked();
 
-  btnbeige1.addEventListener("click",(e)=>{
-    menu1.style.backgroundColor="#FFF6EA";
-    btnvisible1();
-    totalnum++;
-    document.getElementById("total").innerText=totalnum;
-   }, { once : true})
-
-  btnbeige2.addEventListener("click",(e)=>{
-    menu5.style.backgroundColor="#FFF6EA";
-    btnvisible5();
-    totalnum++;
-    document.getElementById("total").innerText=totalnum;
-   },{ once : true})
-   btnbeige3.addEventListener("click",(e)=>{
-    menu9.style.backgroundColor="#FFF6EA";
-    btnvisible9();
-    totalnum++;
-    document.getElementById("total").innerText=totalnum;
-   },{ once : true})
-
-
-   btnpink1.addEventListener("click",(e)=>{
-    menu2.style.backgroundColor="#f8e3e3";
-    btnvisible2();
-    totalnum++;
-    document.getElementById("total").innerText=totalnum;
-   },{ once : true})
-   btnpink2.addEventListener("click",(e)=>{
-    menu6.style.backgroundColor="#f8e3e3";
-    btnvisible6();
-    totalnum++;
-    document.getElementById("total").innerText=totalnum;
-   },{ once : true})
-
-   btnpink3.addEventListener("click",(e)=>{
-    menu10.style.backgroundColor="#f8e3e3";
-    btnvisible10();
-    totalnum++;
-    document.getElementById("total").innerText=totalnum;
-   },{ once : true})
-
-   btnblue1.addEventListener("click",(e)=>{
-    menu3.style.backgroundColor="#E7F3FF";
-    btnvisible3();
-    totalnum++;
-    document.getElementById("total").innerText=totalnum;
-
-   },{ once : true})
-   btnblue2.addEventListener("click",(e)=>{
-    menu7.style.backgroundColor="#E7F3FF";
-    btnvisible7();
-    totalnum++;
-    document.getElementById("total").innerText=totalnum;
-   },{ once : true})
-
-   btnblue3.addEventListener("click",(e)=>{
-    menu11.style.backgroundColor="#E7F3FF";
-    btnvisible11();
-    totalnum++;
-    document.getElementById("total").innerText=totalnum;
-   },{ once : true})
-
-   btnyellow1.addEventListener("click",(e)=>{
-    menu4.style.backgroundColor="#f6e2d0";
-    btnvisible4();
-    totalnum++;
-    document.getElementById("total").innerText=totalnum;
-   },{ once : true})
-
-   btnyellow2.addEventListener("click",(e)=>{
-    menu8.style.backgroundColor="#f6e2d0";
-    btnvisible8();
-    totalnum++;
-    document.getElementById("total").innerText=totalnum;
-   },{ once : true})
-
-   btnyellow3.addEventListener("click",(e)=>{
-    menu12.style.backgroundColor="#f6e2d0";
-    btnvisible12();
-    totalnum++;
-    document.getElementById("total").innerText=totalnum;
-   },{ once : true})
 }
+

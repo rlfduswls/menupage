@@ -119,32 +119,38 @@ body{
 
 #section{ 
     grid-area:section;
-    display: grid;
+    display: flex;
     width: 600PX;
     height: 800pX;
-    grid-template-areas: 
-    "menu1";
-    grid-template-columns: 600px;
-    grid-template-rows: 150px ;
-    place-items: center;
-
-
+    position: relative;
+    align-items: center;
+    flex-direction: column;
 }
-#menu1{
-    grid-area: menu1;
+#menu{
+    position:absolute;
+    left: 80px;
     background: #FFF7EA;
     border-radius: 20px;
     width: 450PX;
     height: 150pX;
 }
 
-#menu1>h2,#menu1>h3{
-    color:#4F4F4F;
-    text-align: left;
+#menu>h2{
+    position: absolute;
+    left: 50px;
 }
-#menu1>h4{
+
+#menu>h3{
+    top: 50px;
+    position: absolute;
+    left: 50px;
+}
+
+#menu>h4{
     color:#4F4F4F;
-    text-align: right;
+    position: absolute;
+    top: 100px;
+    left: 50px;
     font-weight: lighter;
     font-size: medium;
 
@@ -194,44 +200,60 @@ body{
 
 
 
-#btn_open{
-    font-size: small;
-    text-decoration: underline;
-}
-.btn_close{
-    font-size: large;
-    color: white;
-    border: none;
-    border-radius: 3px;
-    background-color:black;
-    font-family: 'SEBANG_Gothic_Bold'
-}
 
-.pop_wrap{position:fixed; 
-    top:0; left:0; right:0; bottom:0; 
-    background:rgba(0,0,0,.5); 
-    font-size:0;
-    text-align:center;}
-.pop_wrap:after{display:inline-block; height:100%; vertical-align:middle; content:'';}
-.pop_wrap .pop_inner{display:inline-block;
-     padding:20px 30px; 
-     background:#FFF7EA;;
-     width:500px; 
-     vertical-align:middle; 
-     font-size:large;
-     border-radius: 10px; 
-}
+    #btn_open{
+        font-size: small;
+        text-decoration: underline;
+    }
+   
+    .pop_wrap{position:fixed; 
+        top:0; left:0; right:0; bottom:0; 
+        background:rgba(0,0,0,.5); 
+        font-size:0;
+        text-align:center;}
+    .pop_wrap:after{display:inline-block; height:100%; vertical-align:middle; content:'';}
+    .pop_inner{
+        display:inline-flex;
+        height: 300px;
+         background:#FFF7EA;
+         width:500px; 
+         vertical-align:middle; 
+         font-size:large;
+         border-radius: 10px; 
+         position: relative;
+        
+    }
 
-.dsc{
-    font-size: large;
-    font-family: 'SEBANG_Gothic_Bold';
-}
+    .btn_close{
+        position: absolute;
+        left: 45%;
+        bottom:10%;
+        font-size: large;
+        color: white;
+        border: none;
+        border-radius: 3px;
+        background-color:black;
+        font-family: 'SEBANG_Gothic_Bold'
+    }
+    #price{
+        
+        position:absolute;
+        font-size: medium;
+    }
+    
+    #num{
 
-.title{
-    font-size: larger;
-    font-family: 'SEBANG_Gothic_Bold';
+        position:absolute;
+        font-size: medium;
+    }
+    #title{
+        font-family: 'SEBANG_Gothic_Bold';
+        top:50px;
+        left: 10px;
+        position:absolute;
+        font-size: medium;
+    }
 
-}
 
 
 #btn_open:visited{

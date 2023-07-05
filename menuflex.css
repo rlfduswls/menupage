@@ -1,0 +1,298 @@
+@font-face {
+    font-family: 'SEBANG_Gothic_Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2104@1.0/SEBANG_Gothic_Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Tenada';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2210-2@1.0/Tenada.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{margin:0;
+padding:0;}
+
+body{
+    background-color: rgb(215, 208, 184);
+}
+
+#wrap{
+    background-color: white;
+    width:600px;
+    margin:0 auto;
+    display: grid;
+    grid-template-areas: 
+    "header1 header2"
+    "section section"
+    "footer footer"
+    "lastfooter lastfooter"
+    ;
+    grid-template-columns: 100px 500px;
+    grid-template-rows:  100px 800px 70px 40px;
+}
+
+#header1>h1{color:#544866;
+    font-family: 'Lilita One';
+font-size:43px;
+
+}
+#header1{
+    grid-area: header1;
+    background-color:white;
+    height: 90px;
+    font-family: 'Lilita One';;
+    position: relative;
+
+}
+#header1>h1{
+    position:absolute;
+    top:50px;
+    left: 70px;
+}
+
+/* 본 메뉴판  */
+#header2{
+    grid-area: header2;
+    height: 40px;
+    border-radius: 20px 20px 0px 0px;
+    position: relative;
+}
+
+#hotice{
+    position:absolute;
+    top:50px;
+    right:50px;
+    font-size: large;
+    color:#000000;
+    font:"SEBANG_Gothic_Bold";   
+}
+
+#section{
+    height: 790px;
+    grid-area: section;
+    background-color: white;
+    display: flex;
+    border-radius: 0px 0px 20px 20px;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+#menu{
+  
+    width: 500px;
+    background-color:white;
+    height: 90px;
+    display: flex;
+    border-radius: 20px;
+    margin: 10px;
+    position: relative;
+}
+
+
+#title{
+    width: 500px;
+    position: absolute;
+    top:10px;
+    bottom:0;
+    left:100px;
+    font-family: 'SEBANG_Gothic_Bold';
+}
+
+
+#matter{
+    position: absolute;
+    top:10px;
+    bottom:0;
+    font-size: xx-small;
+    color: gray;
+
+}
+
+
+#listprice{
+    position: absolute;
+    top: 35px;;
+    left:100px;
+
+ color:rgb(0, 0, 0);
+ font-family: 'SEBANG_Gothic_Bold';
+}
+
+
+
+#circle{
+    position: absolute;
+    top: 5px;
+    bottom:0;
+    left:0px;
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    
+}
+#circle{
+    /* 랜덤 아니면 순서대로  */
+    background-color: #FFEDD2;
+    /* background-color: #FFBCBC;
+    background-color: #BCDFFF;
+    background-color: #FFD0A5; */
+}
+
+
+/* 버튼꾸미기 */
+
+#numbutton.active{
+    visibility: visible;
+    
+}
+
+  #numbutton{
+    visibility: hidden;
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    bottom:0;
+     }
+
+#minus{
+    width: 20px;
+}
+#minus,#plus,#result{
+    border:none;
+    font-size: large;
+    background-color: transparent;
+    display: inline-block;
+
+}
+
+
+/* #menuname{
+    width: 250px;
+    text-align: left;
+} */
+
+/* 메뉴이름 색상 및 폰트 설정 */
+#menuname>h3, #menuname>h5{
+    color:rgb(0, 0, 0);
+font-family: 'SEBANG_Gothic_Bold';
+}
+
+/* -----------footer부분--------------- */
+
+#footer{
+    position: absolute;
+    bottom: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    width:600px;
+    height: 100px;
+    grid-area: footer;
+    background-color: white;
+    opacity:0.7;
+    display: grid;
+    grid-template-areas: ". footer1 footer2 . ";
+    grid-template-columns: 25px 150px 400px 25px ;
+    grid-template-rows: 50px;
+    border-radius:  20px;
+    place-items: center;
+}
+
+#footer1{
+    text-align: center;
+    grid-area: footer1;
+    background-color:#E6E6E6;
+    height: 60px;
+    width: 130px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px #c3c8c6;
+    /* box-shadow: 5px 5px 5px #809089; */
+    border: none;
+    font-family: 'SEBANG_Gothic_Bold'
+
+    
+}
+#footer2{
+    grid-area: footer2;
+    background-color:#BBE4BF;
+    box-shadow: 2px 2px 2px #c3c8c6;
+    height: 60px;
+    width: 380px;
+    border-radius: 10px;
+    border:none;
+    font-family: 'SEBANG_Gothic_Bold'
+}
+/* ----메뉴/레시피/마이 구현----- */
+
+#lastfooter{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width:600px;
+    height: 100px;
+    grid-area: lastfooter;
+    background-color: white;
+    display: grid;
+    grid-template-areas: ". lastfooter1 lastfooter2 lastfooter3 . ";
+    grid-template-columns: 25px 180px 180px 180px 25px ;
+    grid-template-rows: 100px;
+    place-items: center;
+}
+
+#lastfooter1{
+    font-size: larger;
+    text-align: center;
+    grid-area: lastfooter1;
+    background-color:white;
+    height: 10px;
+    width: 170px;
+    border: none;
+    font-family: 'SEBANG_Gothic_Bold'
+
+    
+}
+#lastfooter2{
+    font-size: larger;
+    grid-area: lastfooter2;
+    background-color:white;
+    height: 10px;
+    width: 170px;
+    border:none;
+    font-family: 'SEBANG_Gothic_Bold'
+}
+
+#lastfooter3{
+    font-size: larger;
+    grid-area: lastfooter3;
+    background-color:white;
+    height: 10px;
+    width: 170px;
+    
+    border:none;
+    font-family: 'SEBANG_Gothic_Bold'
+}
+
+
+/* //주문페이지 이동 버튼에 주문 수량 보이도록 */
+#total{
+    background-color: #ffffff;
+    border:white;
+    border-radius: 90px;
+    padding: 10px 15px;
+    text-align: center;
+    font-size: medium;
+}
+
+
+
+
+/* 이미지 넣고 확인 후 작업*/
+#icon{
+ object-fit: fill;   
+}
+
+
+

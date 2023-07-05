@@ -5,6 +5,10 @@
     font-style: normal;
 }
 
+:root {
+    --random-color: #E1D9FF; /* Default color */
+  }
+  
 *{margin:0;
     padding:0;}
 
@@ -63,58 +67,45 @@ body{
 
 #section{ 
     grid-area:section;
-    display: grid;
+    display: flex;
     width: 600PX;
     height: 700pX;
-    grid-template-areas: 
-    "menu1"
-    "menu2";
-    grid-template-columns: 600px;
-    grid-template-rows: 170px 170px ;
-    place-items: center;
-
-
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
 }
-#menu1{
-    grid-area: menu1;
-    background: #E1D9FF;
+
+
+#menu{
+    position: relative;
+    background-color: var(--random-color);
     border-radius: 10px;
     width: 380PX;
     height: 150pX;
+    text-align: center;
+    align-self: auto;
 }
 
 #menu1>h2,#menu1>h3{
     color:#4F4F4F;
     text-align: left;
 }
-#menu1>h4{
+#menu>h4{
     color:#4F4F4F;
     text-align: left;
     font-weight:500;
     font-size: large;
 }
 
-#menu2{
-    grid-area: menu2;
-    background:#D9EDFF;
-    border-radius: 10px;
-    width: 380PX;
-    height: 150pX;
-}
 
-#menu2>h2,#menu2>h3{
-    color:#4F4F4F;
-    text-align: left;
-}
-#menu2>h4{
-    color:#4F4F4F;
-    text-align: left;
-    font-weight:500;
-    font-size: large;
-}
 
 
 #lastfooter{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width:600px;
     height: 100px;
     grid-area: lastfooter;
     background-color: white;
@@ -123,9 +114,11 @@ body{
     grid-template-columns: 25px 180px 180px 180px 25px ;
     grid-template-rows: 100px;
     place-items: center;
+
 }
 
 #lastfooter1{
+    
     font-size: larger;
     text-align: center;
     grid-area: lastfooter1;
@@ -148,6 +141,7 @@ body{
 }
 
 #lastfooter3{
+
     font-size: larger;
     grid-area: lastfooter3;
     background-color:white;
@@ -157,6 +151,31 @@ body{
     font-family: 'SEBANG_Gothic_Bold'}
 
 #ggim{
-    color:#FF7676;}
+    position: absolute;
+    top: 100px;
+    left: 20px;
+    color:#FF7676;
+    text-align: right;
+    right: 20%;
+}
 
 
+#title{
+    position: absolute;
+    left: 20px;
+    text-align: left;
+ 
+}
+
+#username{
+    position: absolute;
+    left: 20px;
+    top:60px;
+    text-align: left;
+
+}
+
+#day{
+    position: absolute;
+    top: 100px;
+    left: 20px;}

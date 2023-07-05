@@ -13,31 +13,25 @@
                 <button type="button" id="headerB" onclick="location.href='order2.html'">찜한목록</button>
             </div>
             <div id="section" style="overflow-x:hidden; height:790px; width:600px;">
-                <div id="menu1">
+                <div id="menumenu">
+                 {% for like in likes %}
+                <div id="menu">
                     <br>
-                    <h2>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp자몽+오렌지</h2>
-                    <h3>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp레시피 by 길연진
-                        <a id="price">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp4,900원</a>
+                    <h4 id= title>{{ like.title }}</h4>
+                    <h3 id="username">레시피 by {{like.swuniName.userName}}
                 </h3>
-                <br><h4 id="day">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp2023.06.29
-                    <a id="ggim">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <i class="fa-solid fa-heart fa-lg"></i></a>
-                </h4>
-                </div>
-                <div id="menu2">
+                <br><h4>
+                    <h4 id="day">{{like.regTime}}
+                    </h4>
+                    <a id="ggim"><i class="fa-solid fa-heart fa-lg"></i></a>
                     <br>
-                    <h2>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp복숭아+살구+자두
-                    </h2>
-                    <h3>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp레시피 by 박현아
-                        <a id="price">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp4,900원</a>
-                </h3>
-                <br><h4 id="day">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp2023.06.30
-                    <a id="ggim" onclick="ggimchange()">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <i class="fa-solid fa-heart fa-lg"></i></a>
-
                 </h4>
-                
                 </div>
             </div>
+                {% endfor %}
                 <div id="lastfooter">
+                    <a href="http://127.0.0.1:8000/" class="link" id="menu">메뉴</a>
+                    
                     <button type="button" id="lastfooter1" onclick="location.href='menu.html'">메뉴</button>
                     <button type="button" id="lastfooter2" onclick="location.href='recipe.html'">레시피</button>
                     <button type="button" id="lastfooter3"  onclick="location.href='order2.html'">마이</button>
